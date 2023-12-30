@@ -6,7 +6,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Color Contrast Checker',
-  description: 'Optimize color choices for readability with the Color Contrast Checker (CCC).',
+  description:
+    'Optimize color choices for readability with the Color Contrast Checker (CCC).',
 }
 
 export default function RootLayout({
