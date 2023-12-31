@@ -1,3 +1,13 @@
+import ColorInput from './components/ColorInput'
+import Footer from './components/Footer'
+import Header from './components/Header'
+
 export default function Page() {
-  return <h1>Color Contrast Checker</h1>
+  return (
+    <div>
+      <Header />
+      <ColorInput />
+      <Footer />
+    </div>
+  )
 }
