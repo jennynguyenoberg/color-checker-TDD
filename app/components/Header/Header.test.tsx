@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import Header from '../app/components/Header'
+import Header from '.'
 
 describe('Header Component', () => {
   test("renders header with text 'Color Contrast Checker'", () => {
