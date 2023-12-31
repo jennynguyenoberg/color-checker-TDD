@@ -38,44 +38,50 @@ const Home: React.FC<HomeProps> = () => {
   }
 
   return (
-    <div>
+    <div className='h-screen w-screen flex justify-center items-center flex-col bg-neutral-100'>
       <Header />
       <div>
-        <input
-          type="color"
-          value={color1}
-          onChange={(e) => setColor1(e.target.value)}
-          aria-label="Color 1"
-        />
-        <input
-          type="color"
-          value={color2}
-          onChange={(e) => setColor2(e.target.value)}
-          aria-label="Color 2"
-        />
-      </div>
-      <div>
-        <ColorInput
-          value={color1}
-          onChange={(value) => setColor1(value)}
-          placeholder="Enter HEX color"
-          label="Color 1"
-        />
-        <ColorInput
-          value={color2}
-          onChange={(value) => setColor2(value)}
-          placeholder="Enter HEX color"
-          label="Color 2"
-        />
-      </div>
-      <ColorPreview color1={color1} color2={color2} />
-      {contrastRatio !== null && (
         <div>
-          <Result result={result} />
-          <Ratio contrastRatio={contrastRatio} />
-          <Grade contrastGrade={contrastGrade} />
+          <input
+            type="color"
+            value={color1}
+            onChange={(e) => setColor1(e.target.value)}
+            aria-label="Background color"
+            className='w-6 h-7 cursor-pointer'
+          />
+          <input
+            type="color"
+            value={color2}
+            onChange={(e) => setColor2(e.target.value)}
+            aria-label="Text color"
+            className='w-6 h-7 cursor-pointer'
+          />
         </div>
-      )}
+        <div>
+          <ColorInput
+            value={color1}
+            onChange={(value) => setColor1(value)}
+            placeholder="Enter HEX color"
+            label="Background color"
+          />
+          <ColorInput
+            value={color2}
+            onChange={(value) => setColor2(value)}
+            placeholder="Enter HEX color"
+            label="Text color"
+          />
+        </div>
+        <div>
+          <ColorPreview color1={color1} color2={color2} />
+          {contrastRatio !== null && (
+            <div>
+              <Result result={result} />
+              <Ratio contrastRatio={contrastRatio} />
+              <Grade contrastGrade={contrastGrade} />
+            </div>
+          )}
+        </div>
+      </div>
       <Footer />
     </div>
   )
