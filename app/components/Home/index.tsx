@@ -41,18 +41,20 @@ const Home: React.FC<HomeProps> = () => {
     <div className='h-screen w-screen flex justify-center items-center flex-col bg-neutral-100'>
       <Header />
       <div>
-        <div className=''>
+        <div>
           <input
             type="color"
             value={color1}
             onChange={(e) => setColor1(e.target.value)}
             aria-label="Background color"
+            className='w-6 h-7 cursor-pointer'
           />
           <input
             type="color"
             value={color2}
             onChange={(e) => setColor2(e.target.value)}
             aria-label="Text color"
+            className='w-6 h-7 cursor-pointer'
           />
         </div>
         <div>
