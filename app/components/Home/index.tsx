@@ -38,27 +38,27 @@ const Home: React.FC<HomeProps> = () => {
   }
 
   return (
-    <div className='h-screen w-screen flex justify-center items-center flex-col bg-neutral-100 text-slate-950	'>
+    <div className="h-screen w-screen flex justify-center items-center flex-col bg-neutral-100 text-slate-950	">
       <Header />
-      <div className='m-6'>
-        <div className='mb-5'>
-          <div className='flex flex-row justify-around relative'>
+      <div className="m-6">
+        <div className="mb-5">
+          <div className="flex flex-row justify-around relative">
             <input
               type="color"
               value={color1}
               onChange={(e) => setColor1(e.target.value)}
               aria-label="Background color"
-              className='w-7 h-8 cursor-pointer fixed inline-block mt-14 mr-16'
+              className="w-7 h-8 cursor-pointer fixed inline-block mt-14 mr-16"
             />
             <input
               type="color"
               value={color2}
               onChange={(e) => setColor2(e.target.value)}
               aria-label="Text color"
-              className='w-7 h-8 cursor-pointer fixed mt-14 ml-96'
+              className="w-7 h-8 cursor-pointer fixed mt-14 ml-96"
             />
           </div>
-          <div className='flex flex-row px-7 pt-4 pb-5 gap-5 justify-between border-2 border-solid border-gray-200 rounded-lg'>
+          <div className="flex flex-row px-7 pt-4 pb-5 gap-5 justify-between border-2 border-solid border-gray-200 rounded-lg">
             <ColorInput
               value={color1}
               onChange={(value) => setColor1(value)}
@@ -73,10 +73,10 @@ const Home: React.FC<HomeProps> = () => {
             />
           </div>
         </div>
-        <div className='bg-green-200 flex flex-row-reverse justify-between items-center p-7 gap-70 border-solid rounded-lg'>
+        <div className="bg-green-200 flex flex-row-reverse justify-between items-center p-7 gap-70 border-solid rounded-lg">
           <ColorPreview color1={color1} color2={color2} />
           {contrastRatio !== null && (
-            <div className='flex flex-col gap-1'>
+            <div className="flex flex-col gap-1">
               <Result result={result} />
               <Ratio contrastRatio={contrastRatio} />
               <Grade contrastGrade={contrastGrade} />

@@ -19,14 +19,14 @@ const ColorInput: React.FC<ColorInputProps> = ({
   }
 
   return (
-    <div className='flex flex-col gap-3'>
-      <label className='text-sm font-medium'>{label}</label>
+    <div className="flex flex-col gap-3">
+      <label className="text-sm font-medium">{label}</label>
       <input
         type="text"
         value={value}
         onChange={handleChange}
         placeholder={placeholder}
-        className='w-52 bg-neutral-100 p-2 flex justify-between border-2 border-solid border-gray-200 rounded-lg'
+        className="w-52 bg-neutral-100 p-2 flex justify-between border-2 border-solid border-gray-200 rounded-lg"
       />
     </div>
   )

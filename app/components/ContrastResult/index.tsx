@@ -9,9 +9,13 @@ const ContrastResult: React.FC<ContrastResultProps> = ({ result }) => {
 
   const colorElement =
     result === 'Pass' ? (
-      <div className="text-emerald-500 font-bold" data-testid="green-element">Pass</div>
+      <div className="text-emerald-500 font-bold" data-testid="green-element">
+        Pass
+      </div>
     ) : (
-      <div className="text-red-500 font-bold" data-testid="red-element">Fail</div>
+      <div className="text-red-500 font-bold" data-testid="red-element">
+        Fail
+      </div>
     )
 
   return (
