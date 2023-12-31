@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import ContrastGrade from '../app/components/ContrastGrade'
+import ContrastGrade from '.'
 
 describe('ContrastGrade Component', () => {
   const contrastGrade = 'A'
