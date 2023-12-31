@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import ContrastResult from '../app/components/ContrastResult'
+import ContrastResult from '.'
 
 describe('ContrastResult component tests', () => {
   test('applies green color for "Pass" result', () => {
