@@ -4,8 +4,7 @@
 
 This Color Contrast Checker is a web application designed to evaluate the color contrast between two chosen colors. It aims to provide users with feedback on whether the contrast ratio meets accessibility standards (a grade based on [WCAG standards](https://www.w3.org/TR/WCAG21/)), making it easy for users with visual impairments to perceive content.
 
-<img height="300" alt="Screenshot of default state" src="https://github.com/JTKsson/jolint-dashboard/assets/116844306/8896fe47-20ac-4b21-bc1f-493adcf392c2">
-<img height="300" alt="Screenshot of changing state" src="https://github.com/JTKsson/jolint-dashboard/assets/116844306/c25294f6-84e5-4480-ad14-a21872f554ea">
+<img height="700" alt="Screenshot of default state" src="https://github.com/jennynguyenoberg/color-checker-TDD/assets/116844306/068340cc-229b-42ef-a6ca-672fa77aae96">
 
 ## Components
 
