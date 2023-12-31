@@ -1,6 +1,6 @@
 import { render, screen, fireEvent, waitFor } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
-import Home from '../app/components/Home'
+import Home from '.'
 
 describe('Home component', () => {
   test('updates color2 when ColorInput changes', () => {
