@@ -1,5 +1,3 @@
-import { Green, Red } from '../../styles/Colors'
-
 interface ContrastResultProps {
   result: string | null
 }
@@ -11,14 +9,14 @@ const ContrastResult: React.FC<ContrastResultProps> = ({ result }) => {
 
   const colorElement =
     result === 'Pass' ? (
-      <Green data-testid="green-element">Pass</Green>
+      <div className="text-emerald-500" data-testid="green-element">Pass</div>
     ) : (
-      <Red data-testid="red-element">Fail</Red>
+      <div className="text-red-500" data-testid="red-element">Fail</div>
     )
 
   return (
-    <p>
-      Contrast: <span>{colorElement}</span>
+    <p className="flex row-span-1">
+      Contrast: <div>{colorElement}</div>
     </p>
   )
 }
