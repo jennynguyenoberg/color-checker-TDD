@@ -1,4 +1,7 @@
-const ContrastRatio: React.FC<ContrastRatioProps> = ({ contrastRatio }) => {
-  return
+const ContrastRatio: React.FC<ContrastRatioProps> = ({  }) => {
+  return (
+    <div></div>
+  )
+}
 
 export default ContrastRatio
