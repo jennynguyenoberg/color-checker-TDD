@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import ContrastRatio from '../app/components/ContrastRatio'
+import ContrastRatio from '.'
 
 describe('ContrastRatio Component', () => {
   test('renders the contrast ratio text', () => {
