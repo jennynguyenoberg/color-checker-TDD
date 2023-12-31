@@ -1,5 +1,5 @@
 import { render, fireEvent, screen } from '@testing-library/react'
-import ColorInput from '../app/components/ColorInput'
+import ColorInput from '.'
 
 describe('ColorInput component', () => {
   test('renders with the correct placeholder', () => {
