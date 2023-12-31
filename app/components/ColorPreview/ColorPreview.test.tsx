@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react'
-import ColorPreview from '../app/components/ColorPreview'
+import ColorPreview from '.'
 
 describe('ColorPreview component', () => {
   test('renders "Lorem ipsum" text in the component', () => {
